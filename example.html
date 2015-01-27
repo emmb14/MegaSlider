@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang='sv'>
+<head>
+	<meta charset='utf-8'/>
+	<title>Slideshow</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/megaslider-style.css'/>
+	
+	<!-- jQery -->
+	<script src='js/jquery-1.11.2.min.js'></script>
+	
+	
+	<script>
+		var photos = [{
+			"title" : "Title 1",
+			"image" : "http://lorempixel.com/g/1920/1920/nightlife/5/",
+			"url" : "",
+			"firstline" : "Lorem ipsum",
+			"secondline" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		}, {
+			"title" : "Title 2",
+			"image" : "http://lorempixel.com/g/1920/1920/nightlife/2/",
+			"url" : "",
+			"firstline" : "Lorem ipsum",
+			"secondline" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+		}];
+		var slideshowSpeed = 9000; 
+	</script>
+
+	
+	<!-- MegaSlider -->
+	<script src='js/megaslider.js'></script>
+	
+</head>
+<body>
+	
+	<div id="slide-wrapper">
+	
+		<!-- Slide images -->
+		<div id ="slideimages">
+			<div id="slideimg1" class="slideimg"></div>
+			<div id="slideimg2" class="slideimg"></div>
+		</div>
+		
+		<!-- slide-text -->
+		<div id="slide-text">
+			<h1 id="firstline"></h1>
+			<p><a href="#" id="secondline"></a></p>
+		</div>
+		
+		<!-- Slideshow controls -->
+		<div id ="controls-outer">
+			<div id ="controls">
+				<div id="back" class="btn"></div>
+				<div id="control" class="btn"></div>
+				<div id="next" class="btn"></div>
+			</div>
+		</div>
+		
+		<audio autoplay loop id="music">
+			<source src="sound/phoney.mp3">
+			Your browser does not support HTML5 audio.
+		</audio>
+		
+		<div id="sound">
+			<img id="sound-control" src="img/ljud_pa.png" alt=""/>
+		</div>
+	</div>
+</body>
+</html>
